@@ -1,0 +1,50 @@
+body{
+	margin:0;
+	font: 12px/1.5 
+		  Helvetica Neue,Helvetica,Arial,
+		  Hiragino Sans GB,Microsoft YaHei,
+		  \5b8b\4f53,sans-serif;
+	color: #323232;
+}
+p{
+	margin:0;
+}
+ol,ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+blockquote{
+	margin:0;
+}
+address{
+	font-style: normal;
+}
+dl,dt,dd{
+	margin:0;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+em{
+	font-style: normal;
+}
+img{
+	border:0;
+}
+form,input,button{
+	/* 
+		外边线
+			特性1：书写方式和 border 相同
+			特性2：在文档流布局中不占位置
+	*/
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+textarea{
+	resize: none;
+}

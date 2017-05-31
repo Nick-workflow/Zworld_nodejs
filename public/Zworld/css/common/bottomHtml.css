@@ -1,0 +1,288 @@
+.footNav{
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.footNavTop{
+	text-align: center;
+    padding-top: 25px;
+}
+.footNavTop li{
+	margin-left: 69px;
+    display: inline-block;
+    font-size: 18px;
+}
+.footNavTop li:before{
+    content: '|';
+    position: absolute;
+    margin-left: -35px;
+    color: #dfdfdf;
+}
+.footNavTop li:first-child{
+	margin-left: 0;
+}
+.footNavTop li:first-child:before{
+	content: '';
+}
+.footNavTop li a{
+	color: #575757;
+}
+.footNavTop li a:hover{
+	color: #12af7e;
+}
+.footNavBottom{
+	width: 1160px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0 50px;
+}
+.footNavBottom li{
+	float: left;
+    width: 275px;
+    margin-left: 55px;
+    padding-left: 75px;
+}
+.footNavBottom li:first-child{
+	margin-left: 0;
+}
+.footNavBottom_icon{
+	position: absolute;
+    margin-left: -75px;
+    width: 56px;
+    height: 56px;
+    background: url("../../img/foot-sprite.png") no-repeat;
+}
+.footIconFirst{
+	background-position: 0 0;
+}
+.footIconSecond{
+	background-position: 0 -56px;
+}
+.footIconThird{
+	background-position: 0 -112px;
+}
+.footNavBottom_title{
+	margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.footNavBottom_text{
+	color: #959595;
+}
+
+
+.bottomHtml{
+	padding: 48px 0;
+    background-color: #333;
+    color: #c0c0c0;
+}
+.bottomHtmlContain{
+	width: 1160px;
+    margin: 0 auto;
+}
+.bottomHtmlLine1:after{
+	clear:both;
+	content:' ';
+	display:block;
+	width: 0;
+	height: 0;
+	visibility:hidden;
+}
+.bottomHtmlLine1_left{
+	float: left;
+}
+.bottomHtmlLine1_left_logo{
+	float: left;
+    margin-right: 25px;
+}
+.bottomHtmlLine1_left_text{
+	float: left;
+    width: 540px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.bottomHtmlLine1_right{
+	float: right;
+    position: relative;
+}
+.bottomHtmlLine1_right dt{
+	float: left;
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 48px;
+    color: #ececec;
+}
+.bottomHtmlLine1_right dd{
+	float: left;
+    margin-left: 10px;
+}
+.bottomHtmlLine1_right .layer{
+	display: none;	
+    position: absolute;
+    right: -2px;
+    bottom: 48px;
+    padding-bottom: 18px;
+}
+.bottomHtmlLine1_right .box{
+	position: relative;
+    width: 224px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #636363;
+    font-size: 0; /*清楚不必要的间隔*/
+}
+.bottomHtmlLine1_right .box:after{
+	position: absolute;
+    left: 20px;
+    bottom: -7px;
+    content: '';
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #ddd;
+}
+.bottomHtmlLine1_right .wechat .box:after{
+	left: 76px;
+}
+.bottomHtmlLine1_right .weibo .box:after{
+	left: 135px;
+}
+.bottomHtmlLine1_right .mail .box:after{
+	left: 193px;
+}
+.bottomHtmlLine1_right .clearfix:after{
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.bottomHtmlLine1_right .pics{
+	float: left;
+	padding: 10px 0 10px 10px;
+}
+.bottomHtmlLine1_right .text{
+	padding-top: 23px;
+    text-align: center;
+}
+.bottomHtmlLine1_right .txt1{
+	font-size: 12px;
+    line-height: 20px;
+}
+.bottomHtmlLine1_right .txt2{
+	font-size: 16px;
+    line-height: 24px;
+}
+.bottomHtmlLine1_right .txt3{
+	font-size: 25px;
+    line-height: 28px;
+    color: #00b081;
+}
+.bottomHtmlLine1_right .weibo .box .follow{
+	margin: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 30px;
+    background-color: #ff7467;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+}
+.bottomHtmlLine1_right .weibo .box .text{
+	vertical-align: middle;
+    font-size: 14px;
+    line-height: 30px;
+}
+.bottomHtmlLine1_right .weibo .box .text a{
+	color: #0073b6;
+}   
+.bottomHtmlLine1_right .weibo .box .text a:hover{
+	text-decoration: underline;
+}
+
+.bottomHtmlLine1_right .mail .box .iptext{
+	vertical-align: middle;
+    margin: 15px 0 15px 15px;
+    width: 116px;
+    height: 28px;
+    padding: 0 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+.bottomHtmlLine1_right .mail .box .ipsbm{
+	vertical-align: middle;
+    width: 62px;
+    height: 30px;
+    border: none;
+    background-color: #00b081;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bottomHtmlLine1_right dd:hover .layer{
+	display: block;
+}
+.bottomHtmlLine1_right .iphone:hover .bottomHtml_icons span{
+	color: #f0d23f;
+}
+.bottomHtmlLine1_right .wechat:hover .bottomHtml_icons span{
+	color: #7cd68b;
+}
+.bottomHtmlLine1_right .weibo:hover .bottomHtml_icons span{
+	color: #ff7467;
+}
+.bottomHtmlLine1_right .mail:hover .bottomHtml_icons span{
+	color: #70d3e2;
+}
+.bottomHtml_icons{
+	padding: 7px;
+    border: 1px solid #959595;
+    border-radius: 50%;
+}
+.bottomHtml_icons span{
+	display: block;
+    font-size: 32px;
+    color: #f0f0f0;
+    cursor: default;
+}
+
+.bottomHtmlLine2{
+	padding-top: 46px;
+}
+.bottomHtmlLine2_firstline{
+	margin-bottom: 2px;
+    font-size: 14px;
+    color: #c0c0c0;
+}
+.bottomHtmlLine2_firstline a{
+	color: #c0c0c0;
+}
+.bottomHtmlLine2_firstline a:hover{
+	text-decoration: underline;
+}
+.bottomHtmlLine2_separator{
+	margin: 0 18px;
+}
+.bottomHtmlLine2_secondline{
+	font-size: 12px;
+    line-height: 26px;
+}
+.bottomHtmlLine2_thirdline{
+	font-size: 14px;
+    line-height: 26px;
+}
+.bottomHtmlLine2_thirdline a{
+	margin-right: 14px;
+    color: #c0c0c0;
+}
+.bottomHtmlLine2_thirdline a:hover{
+	text-decoration: underline;
+}

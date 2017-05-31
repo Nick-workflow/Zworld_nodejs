@@ -1,0 +1,541 @@
+body{
+	background: #33312e;
+}
+/**********************citywalk 头部***********************/
+.citywalkHeader{
+	background-color: #fff;
+    border-bottom: 2px solid #45c79f;
+}
+.citywalkHeader-searchWhite{
+	height: 80px;
+    padding: 5px 0;
+}
+.citywalkHeader-searchWhite-contain{
+	width: 100%;
+}
+.citywalkHeader-searchWhite-unit{
+	margin: 0 auto;
+    width: 1160px;
+    padding: 20px 0;
+}
+.citywalkHeader_logo{
+	display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+.citywalkHeader_logo img{
+	width: 118px;
+	height: 34px;
+}
+.citywalkHeader_searchLine{
+	display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 60px;
+}
+.citywalkHeader_searchLine .icons{
+	position: absolute;
+    margin-left: 14px;
+    margin-top: 12px;
+}
+.citywalkHeader_searchLine .icons span{
+	font-size: 18px;
+    color: #bbbbbb;
+}
+.citywalkHeader_searchLine .iptext{
+	width: 615px;
+    height: 40px;
+    padding: 0 25px 0 43px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+}
+.citywalkHeader_searchLine .iptext:focus{
+	box-shadow: 0 0 0 1px #16c1a0;
+}
+.citywalkHeader_dropDown{
+	z-index: 10;
+    width: 650px;
+    display: none;
+    left: 18px;
+    top: 41px;
+    position: absolute;
+    background-color: #fff;
+}
+.show{
+	display: block;
+}
+.citywalkHeader_dropDown:hover{
+	display: block;
+}
+.citywalkHeader_dropDown_content{
+	border: 1px solid #ccc;
+    border-top: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12);
+}
+.citywalkHeader_dropDown_content li{
+	border-top: 1px solid #f4f4f4;
+    font-size: 16px;
+    line-height: 38px;
+}
+.citywalkHeader_dropDown_content li:first-child{
+	border-top: none;
+}
+.citywalkHeader_dropDown_content li a{
+	display: block;
+    padding: 0 12px;
+    overflow: hidden;
+    color: #323232;
+}
+.citywalkHeader_dropDown_content li a:hover{
+	background-color: #21c09e;
+    color: #fff;
+}
+.citywalkHeader_dropDown_content li a:hover em{
+	color: #fff;
+}
+.citywalkHeader_dropDown_content li em{
+	float: right;
+    font-size: 14px;
+    color: #dbdbdb;
+    font-weight: 500;
+}
+.citywalkHeader_dropDown_content li span{
+	float: left;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.citywalkHeader_rightLink{
+	display: inline-block;
+    vertical-align: middle;
+    margin-left: 65px;
+}
+.citywalkHeader_rightLink_item{
+	display: inline-block;
+    vertical-align: middle;
+    height: 26px;
+    line-height: 26px;
+    font-size: 0;
+}
+.citywalkHeader_rightLink_item.myorder{
+	padding-right: 12px;
+    border-right: 1px solid #e6e6e6;
+}
+.citywalkHeader_rightLink_item.collect{
+	margin-left: 12px;
+}
+.citywalkHeader_rightLink_item i{
+	vertical-align: middle;
+    font-size: 18px;
+    color: #45c79f;
+}
+.citywalkHeader_rightLink_item span{
+	margin-left: 12px;
+    font-size: 12px;
+    color: #bbbbbb;
+    line-height: 12px;
+    height: 11px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.citywalkHeader_rightLink_item:hover span{
+	color: #45c79f;
+}
+.citywalkHeader-nav{
+	width: 1160px;
+    margin: 0 auto;
+}
+.citywalkHeader-navContain{
+    width: 100%;
+    table-layout: fixed;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+.citywalkHeader-navContain a{
+	display: block;
+	width: 80px;
+	text-align: center;
+    font-size: 14px;
+    line-height: 48px;
+    border-bottom: 2px solid #ffffff;
+    color: #323232;
+    margin: 0 8px;
+}
+.citywalkHeader-nav li{
+	display: inline-block;
+}
+.citywalkHeader-nav li.active a{
+	position: relative;
+    color: #12af7e;
+    border-bottom: 2px solid #45c79f;
+}
+.citywalkHeader-nav li a:hover{
+    color: #12af7e;
+    border-bottom: 2px solid #45c79f;
+}
+.citywalkHeader-nav .hotDestination{
+	width: 155px;
+    text-align: center;
+    position: relative;
+}
+.citywalkHeader-nav .hotDestination a:hover{
+	color: #323232;
+    border-bottom: 2px solid #ffffff;
+}
+.citywalkHeader-nav .hotDestination-wrap{
+	width: 138px;
+	height: 26px;
+    line-height: 26px;
+    border-right: 1px solid #f0f0f0;
+}
+.citywalkHeader-nav .icon-hot{
+	font-size: 12px;
+    color: #dddddd;
+    margin-left: 10px;
+}
+.citywalkHeader-nav em.tag{
+	position: absolute;
+    margin-top: -3px;
+    margin-left: -26px;
+}
+.citywalkHeader-nav em.tag:after{
+	content: '';
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-top: 6px solid #d0392a;
+    border-right: 6px solid transparent;
+}
+.citywalkHeader-nav em.tag img{
+	width: 37px;
+	height: 12px;
+	display: block;
+}
+/*********************citywalk 头部 End*********************/
+
+/**********************citywalk 背景*************************/
+.citywalkBack{
+	width: 100%;
+	height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+.citywalkBack-contain{
+	background-image: url("../../img/citywalkBack.jpg");
+	background-position: top;
+	position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/********************citywalk 背景 End*************************/
+
+/********************citywalk 所在城市*************************/
+.citywalk-city{
+	margin-top: 35px;
+}
+.citywalk-cityContain{
+	width: 1160px;
+    margin: -1px auto 0;
+    padding: 22px 20px 0 27px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 0;
+}
+.clearfix:after{
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.citywalk-city-title{
+	display: inline-block;
+    line-height: 22px;
+    vertical-align: top;
+    width: 90px;
+    font-size: 14px;
+    color: #323232;
+    padding-top: 1px;
+}
+.citywalk-city-content{
+	color: #636363;
+    white-space: nowrap;
+    font-size: 0;
+    width: 1010px;
+    padding-bottom: 4px;
+    position: relative;
+    display: inline-block;
+    line-height: 22px;
+    vertical-align: top;
+}
+.citywalk-city-contentAll{
+	display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+    padding-top: 1px;
+}
+.citywalk-city-contentLink{
+	color: #636363;
+    padding: 0 6px;
+    display: inline-block;
+    font-size: 14px;
+}
+.citywalk-city-contentLink:hover{
+    color: #12af7e;
+    text-decoration: underline;
+}
+.citywalk-city-contentLink.active{
+	background: #12af7e;
+    color: #fff;
+    text-decoration: none;
+}
+.citywalk-city-contentListWrap{
+	display: inline-block;
+    vertical-align: top;
+    max-width: 980px;
+}
+.citywalk-city-contentList li{
+	float: left;
+    margin: 0 0 14px 10px;
+    padding-top: 1px;
+}
+/*******************citywalk 所在城市 End**********************/
+
+/*********************citywalk 排序列表***********************/
+.citywalkOrder{
+	width: 1160px;
+    height: 32px;
+    position: relative;
+    margin: 25px auto;
+}
+.citywalkOrder-contain{
+	float: left;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+}
+.citywalkOrder-contain li{
+	float: left;
+    position: relative;
+    font-size: 0;
+    margin-right: 33px;
+}
+.citywalkOrder-contain li a{
+	color: #f5f5f5;
+	float: left;
+    padding: 0 4px;
+    font-size: 14px;
+}
+.citywalkOrder-contain li a:hover{
+	color: #12af7e;
+}
+.citywalkOrder-contain li.sort-default a{
+	color: #12af7e;
+}
+.citywalkOrder-contain li i{
+	line-height: 32px;
+    font-size: 12px;
+    color: #636363;
+}
+.citywalkOrder-contain li a:hover i{
+	color: #12af7e;
+}
+.citywalkOrder-contain li .todyNew{
+	display: block;
+    height: 32px;
+}
+.citywalkOrder-contain li .checkbox{
+	display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 14px;
+}
+.citywalkOrder-contain .todyNew span{
+	color: #f5f5f5;
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+/*******************citywalk 排序列表 End**********************/
+
+/**********************citywalk 内容*************************/
+.citywalkContentList{
+	width: 1160px;
+    margin: 25px auto 0;
+    display: none;
+}
+.citywalkContentList_contain{
+	border: 1px solid #33312e;
+	width: 1158px;
+    height: 270px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #fff;
+}
+.citywalkContentList_contain a img{
+	width: 400px;
+	height: 270px;
+	display: block;
+	float: left;
+}
+.citywalkContentList_info{
+	width: 758px;
+    height: 270px;
+    float: right;
+    font-size: 16px;
+}
+.citywalkContentList_infoPlace{
+	border: 1px solid #ddd;
+    margin: 12px 0 12px 20px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #636363;
+    padding: 0 5px;
+    text-align: center;
+}
+.citywalkContentList_infoNum{
+	height: 52px;
+    line-height: 52px;
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.citywalkContentList_infoNum span{
+	color: #00b081;
+    padding: 0 5px 0 7px;
+}
+.citywalkContentList_info h2{
+	clear: both;
+    width: 100%;
+    height: 60px;
+    line-height: 30px;
+    font-size: 26px;
+    overflow: hidden;
+    text-align: left;
+    font-weight: 400;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.citywalkContentList_info h2 a{
+	width: 100%;
+    height: 60px;
+    color: #000;
+}
+.citywalkContentList_info h2 a:hover{
+	color: #00b081;
+}
+.citywalkContentList_infoList{
+	padding: 10px 0 0 20px;
+    display: block;
+    width: 460px;
+    height: 88px;
+    overflow: hidden;
+    float: left;
+}
+.citywalkContentList_infoList li{
+	width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.citywalkContentList_infoList li i{
+	color: #00b081;
+    padding-right: 10px;
+    cursor: default;
+}
+.citywalkContentList_price{
+	overflow: hidden;
+    float: right;
+    height: 38px;
+    padding-top: 44px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #999;
+    line-height: 38px;
+}
+.citywalkContentList_price span{
+	text-decoration: line-through;
+}
+.citywalkContentList_price em{
+	font-size: 40px;
+    color: #ff7362;
+    padding: 0 4px 0 12px;
+    font-weight: 300;
+    position: relative;
+    top: 3px;
+    vertical-align: 2px;
+}
+.citywalkContentList_bottom{
+	width: 758px;
+    height: 56px;
+    clear: both;
+    font-size: 14px;
+}
+.citywalkContentList_bottom a{
+	float: right;
+    width: 174px;
+    height: 56px;
+    background-color: #ff7362;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 56px;
+}
+.citywalkContentList_bottom a:hover{
+	background-color: #ff8f81;
+}
+.citywalkContentPage_wrap{
+	width: 1160px;
+    margin: 0 auto 20px;
+}
+.citywalkContentPage_btn{
+	float: right;
+    font-size: 14px;
+}
+.citywalkContentPage_btn .item{
+	color: #ccc;
+	display: inline-block;
+	padding: 0 7px;
+	margin-left: 4px;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 24px;
+}
+.citywalkContentPage_btn .item:hover{
+	background: none;
+    color: #00b081;
+}
+.citywalkContentPage_btn .Current{
+	padding: 0 12px;
+    background: #00b081;
+}
+/*********************citywalk 内容 End**********************/

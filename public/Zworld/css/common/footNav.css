@@ -1,0 +1,71 @@
+.footNav{
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.footNavTop{
+	text-align: center;
+    padding-top: 25px;
+}
+.footNavTop li{
+	margin-left: 69px;
+    display: inline-block;
+    font-size: 18px;
+}
+.footNavTop li:before{
+    content: '|';
+    position: absolute;
+    margin-left: -35px;
+    color: #dfdfdf;
+}
+.footNavTop li:first-child{
+	margin-left: 0;
+}
+.footNavTop li:first-child:before{
+	content: '';
+}
+.footNavTop li a{
+	color: #575757;
+}
+.footNavTop li a:hover{
+	color: #12af7e;
+}
+.footNavBottom{
+	width: 1160px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0 50px;
+}
+.footNavBottom li{
+	float: left;
+    width: 275px;
+    margin-left: 55px;
+    padding-left: 75px;
+}
+.footNavBottom li:first-child{
+	margin-left: 0;
+}
+.footNavBottom_icon{
+	position: absolute;
+    margin-left: -75px;
+    width: 56px;
+    height: 56px;
+    background: url("../../img/foot-sprite.png") no-repeat;
+}
+.footIconFirst{
+	background-position: 0 0;
+}
+.footIconSecond{
+	background-position: 0 -56px;
+}
+.footIconThird{
+	background-position: 0 -112px;
+}
+.footNavBottom_title{
+	margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.footNavBottom_text{
+	color: #959595;
+}

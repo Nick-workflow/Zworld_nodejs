@@ -1,0 +1,278 @@
+.main{
+    width: 100%;
+    height: 100%;
+    font-family: "Hiragino Sans GB","Microsoft YaHei","SimHei","SimSun",sans-serif;
+}
+
+/*登录框部分*/
+.login-container{
+    min-width: 960px;
+    min-height: 760px;
+    background: url("//static.qyer.com/models/project/user/images/web_login_bg.jpg")
+    no-repeat top center;
+    background-size: cover;
+}
+.login-wrap{
+    width: 380px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+/*登录  logo*/
+.login-wrap .login-logo{
+    text-align: center;
+}
+.login-wrap .login-logo img{
+    height: 46px;
+    vertical-align: middle;
+}
+.login-logo .title{
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    vertical-align: bottom;
+}
+/*登陆框*/
+.login-box{
+    width:380px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 45px;
+    padding: 10px 0 30px;
+}
+.login-register{
+    width: 330px;
+    margin: 0 auto;
+    height: 100%;
+}
+.login-tabs{
+    border-bottom: 1px solid #ddd;
+}
+.login-way{
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    color: #959595;
+    font-size: 16px;
+}
+.login-way:hover{
+    color: #3f9f5f;
+}
+.checkedItem{
+    color: #3f9f5f;
+    border-bottom:2px solid #3f9f5f;
+}
+.login-form{
+    padding-top: 30px;
+}
+.login-input,.register-input{
+    height: 70px;
+}
+.login-input-box,.register-input-box{
+    height: 32px;
+    line-height: 32px;
+    border:1px solid #d7d7d7;
+    padding:3px 7px;
+}
+.userAccount .login-input-box,.userPwd .login-input-box{
+    width: 314px;
+}
+.userRigester .select-area{
+    width: 77px;
+    line-height: 38px;
+    height: 40px;
+    margin-right: 3px;
+}
+.phone-number{
+    width: 230px;
+}
+.check-code-input{
+    width: 182px;
+    margin: 0px 3px;
+}
+.check-code-img{
+    width: 121px;
+    height: 39px;
+    vertical-align: top;
+}
+.receiveValidate.submit-loginForm{
+    display: inline-block;
+    width: 121px;
+    height: 39px;
+    text-align: center;
+    line-height: 37px;
+    vertical-align: top;
+    font-weight: normal;
+    font-size: 14px;
+}
+/*提示框变红 error*/
+.login-input-box.input-error,.register-input-box.input-error{
+    border-color: #ff654c;
+}
+/*提示错误图片 error*/
+.isNull,.errorInfo,.judgePwd{
+    display: inline-block;
+    height: 16px;
+    float: left;
+    padding: 6px 14px;
+    color: #ff654c;
+    background: url('//static.qyer.com/models/common/component/loginDialog/error.png') 0 9px no-repeat;
+    display: none;
+}
+.userPwd .forget-pwd-txt{
+    float: right;
+    display: block;
+    margin: 6px 0;
+    font-size: 12px;
+}
+.gray{
+    color: #959595;
+}
+.hover:hover{
+    color: #3f9f5f ;
+}
+.submit-loginForm{
+    width: 330px;
+    background: #5cad77;
+    color: #fff;
+    border-radius: 4px;
+    height: 36px;
+    line-height: 30px;
+    font-size: 16px;
+}
+.submit-loginForm:hover{
+    opacity: 0.9;
+}
+.submit-btn .remember{
+    vertical-align: middle;
+}
+.submit-btn span{
+    font-size: 14px;
+    line-height: 30px;
+}
+.login-otherway{
+    padding:20px 0;
+}
+.login-otherway a{
+    background:url('//static.qyer.com/models/common/component/loginDialog/icon-otherlogin_s.png') no-repeat;
+    display: inline-block;
+    margin: 0 21px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+.login-otherway .otherway-qq:hover{
+    background-position: 0px -40px;
+}
+.login-otherway .otherway-weibo{
+    background-position: -40px 0px;
+}
+.login-otherway .otherway-weibo:hover{
+    background-position: -40px -40px;
+}
+.login-otherway .otherway-taobao{
+    background-position: -80px 0;
+}
+.login-otherway .otherway-taobao:hover{
+    background-position: -80px -40px;
+}
+.login-otherway .otherway-weixin{
+    background-position: -120px 0;
+}
+.login-otherway .otherway-weixin:hover{
+    background-position: -120px -40px;
+}
+.login-link-register a{
+    display: inline-block;
+    font-size: 14px;
+}
+.login-link-register .turn-register{
+    float: right;
+    color: #3f9f5f;
+}
+.login-link-register .turn-register:hover{
+    text-decoration: underline;
+}
+
+/*login-footer*/
+.login-footer-wrap{
+    width: 100%;
+    min-width: 960px;
+    background: #363636 url("../../img/foot_bg.png") repeat-x 0 top;
+}
+.login-footer{
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.login-footer-aboutUs{
+    overflow: hidden;
+    padding-top: 3px;
+}
+.login-footer-list li{
+    float: left;
+    line-height: 24px;
+    font:12px/1.5 helvetica,arial,"hiragino sans gb","\5b8b\4f53",sans-serif;
+    width: 140px;
+}
+.login-footer-list li a{
+    margin: 4px 0;
+}
+.login-footer-list li dt{
+    color: #c2c2c2;
+    font-weight:bold;
+    padding-bottom: 7px;
+}
+.login-footer-list li dd a{
+    margin: 0 8px 8px 0;
+}
+.login-footer a{
+    display: inline-block;
+    color: #959595;
+}
+.login-footer a:hover{
+    text-decoration: underline;
+}
+.bg-img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("http://static.qyer.com/models/basic/images/headfoot.png") no-repeat;
+}
+.weibo.bg-img{
+    background-position: 0 -1080px;
+}
+.flickr.bg-img{
+    background-position: -30px -1080px;
+}
+.renren.bg-img{
+    background-position: -60px -1080px;
+}
+.douban.bg-img{
+    background-position: 0 -1110px;
+}
+.instagram.bg-img{
+    background-position: -90px -1080px;
+}
+.weico.bg-img{
+    background-position: -90px -1110px;
+}
+.iphonApp.bg-img{
+    background-position:0 -74px;
+    width: 135px;
+    height: 40px;
+    display: block;
+    margin-left: 115px;
+}
+.login-copy-right .logo{
+    background-position:0 -135px;
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin: 3px 10px 0 -5px;
+}
+.login-copy-right{
+    color: #959595;
+    margin-top: 20px;
+}

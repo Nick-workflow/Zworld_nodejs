@@ -1,0 +1,41 @@
+@font-face {
+	font-family:firstIcons;
+	src:url("../../font/firstIcons.eot");
+	src:url("../../font/firstIcons.eot#iefix") format('embedded-opentype'),
+		url("../../font/firstIcons.ttf") format('truetype'),
+		url("../../font/firstIcons.woff") format('woff'),
+		url("../../font/firstIcons.svg#firstIcons") format('svg');
+	font-weight:400;
+	font-style:normal
+}
+.first-iconfont{
+	font-family:firstIcons!important;
+	speak:none;
+	font-style:normal;
+	font-weight:400;
+	font-variant:normal;
+	text-transform:none;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+@font-face {
+    font-family:secondIcons;
+    src:url("../../font/secondIcons.eot");
+    src:url("../../font/secondIcons.eot?#iefix") format('embedded-opentype'), 
+    	url("../../font/secondIcons.woff") format('woff'), 
+    	url("../../font/secondIcons.ttf") format('truetype'), 
+    	url("../../font/secondIcons.svg#secondIcons") format('svg');
+}
+.second-iconfont{
+    font-family:secondIcons!important;
+    speak:none;
+	font-style:normal;
+	font-weight:400;
+	font-variant:normal;
+	text-transform:none;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}

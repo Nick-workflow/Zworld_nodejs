@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/login/login.css" />
+    <link rel="stylesheet" href="../../css/common/reset.css" />
+
+    <script type="text/javascript" src="../../js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="../../js/validate.js"></script>
+</head>
+<body>
+    <div class="main">
+        <!--登录框-->
+        <div class="login-container">
+            <div class="login-wrap">
+                <div class="login-logo">
+                    <img src="//static.qyer.com/models/project/user/images/login_logo2.png">
+                    <span class="title">登录</span>
+                </div>
+                <div class="login-box">
+                    <div class="login-register register-login">
+                        <div class="login-tabs">
+                            <a id="userLogin" class="checkedItem login-way" href="javascript:;">账号登录
+                            </a><a id="userRegister" class="login-way"  href="javascript:;">短信快捷登录</a>
+                        </div>
+                        <div class="login-form">
+                            <form action="/users" id="loginForm" autocomplete="off" method="get">
+                                <div class="userAccount login-input" ><!--style="display: none"-->
+                                    <input class="login-input-box" id="account" name="account" type="text" placeholder="邮箱/手机号">
+                                    <span class="isNull">请输入手机/邮箱号</span>
+                                    <span class="errorInfo">手机/邮箱号格式有误</span>
+                                    <span id="prompt_user" class="errorInfo"></span>
+                                </div>
+                                <div class="userRigester register-input" style="display: none">
+                                    <select class="select-area register-input-box">
+                                        <option>86</option>
+                                        <option>中国(86)</option>
+                                        <option>阿富汗(543)</option>
+                                    </select>
+                                    <input class="phone-number register-input-box" id="registerName" type="text" placeholder="手机号">
+                                    <span class="isNull">请输入手机</span>
+                                    <span class="errorInfo">请输入正确的手机号</span>
+                                </div>
+                                <div class="userPwd login-input" >
+                                    <input class="login-input-box" id="pwd" name="pwd" type="password" placeholder="密码">
+                                    <span class="isNull">请输入密码</span>
+                                    <span class="errorInfo ">请输入6-16位的密码</span>
+                                    <span id="judgePwd" class="judgePwd" ></span>
+                                    <a class="forget-pwd-txt gray hover" href="javascript:;">忘记密码</a>
+                                </div>
+                                <div class="checkCode register-input" style="display: none">
+                                    <input id="checkCode" name="checkCode" class="check-code-input register-input-box" type="text" placeholder="图片识别码">
+                                    <a href="javascript:;"><img  class="check-code-img" src="../../img/code.png" alt=""></a>
+                                    <span class="isNull">请输入图片识别码</span>
+                                    <span class="errorInfo">图片识别码有误</span>
+                                </div>
+                                <div class="validateCode register-input" style="display: none">
+                                    <input id="validateCode" class="check-code-input register-input-box" type="text" placeholder="输入短信中的验证码">
+                                    <a class="receiveValidate submit-loginForm" href="javascript:;"><span>发送验证码</span></a>
+                                    <span class="isNull">请输入短信验证码</span>
+                                    <span class="errorInfo">短信验证码有误</span>
+                                </div>
+                                <div class="submit-btn">
+                                    <input class="login-input-box submit-loginForm" type="submit" value="登录">
+                                    <input class="remember" type="checkbox" checked>
+                                    <span class="gray">记住我</span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="login-otherway">
+                            <a class="otherway-qq" href="javascript:;">
+                            </a><a class="otherway-weibo" href="javascript:;">
+                            </a><a class="otherway-taobao" href="javascript:;">
+                            </a><a class="otherway-weixin" href="javascript:;"></a>
+                        </div>
+                        <div class="login-link-register">
+                            <a class="gray hover" href="javascript:;">用户名登录</a>
+                            <span class="gray" href="javascript:;">|</span>
+                            <a class="gray hover" href="javascript:;">境外手机号登录</a>
+                            <a class="gray hover turn-register" href="javascript:;">立即注册</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- login-footer 开始-->
+        <div class="login-footer-wrap">
+            <div class="login-footer">
+                <div class="login-footer-aboutUs">
+                    <ul class="login-footer-list">
+                        <li>
+                            <dl>
+                                <dt>关于我们</dt>
+                                <dd><a href="javascript:;">穷游简介</a></dd>
+                                <dd><a href="javascript:;">联系我们</a></dd>
+                                <dd><a href="javascript:;">合作伙伴</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>加入穷游</dt>
+                                <dd><a href="javascript:;">招聘职位</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>网站条款</dt>
+                                <dd><a href="javascript:;">会员条款</a></dd>
+                                <dd><a href="javascript:;">社区指南</a></dd>
+                                <dd><a href="javascript:;">版权声明</a></dd>
+                                <dd><a href="javascript:;">免责声明</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>帮助中心</dt>
+                                <dd><a href="javascript:;">新手上路</a></dd>
+                                <dd><a href="javascript:;">使用帮助</a></dd>
+                                <dd><a href="javascript:;">网站地图</a></dd>
+                            </dl>
+                        </li>
+                        <li class="follow-us">
+                            <dl>
+                                <dt>关注我们</dt>
+                                <dd>
+                                    <a class="weibo bg-img" href="javascript:;"></a>
+                                    <a class="flickr bg-img" href="javascript:;"></a>
+                                    <a class="renren bg-img" href="javascript:;"></a>
+                                </dd>
+                                <dd>
+                                    <a class="douban bg-img" href="javascript:;"></a>
+                                    <a class="instagram bg-img" href="javascript:;"></a>
+                                    <a class="weico bg-img" href="javascript:;"></a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <a class="iphonApp bg-img" href="javascript:;"></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="login-copy-right">
+                    <a class="logo bg-img" href="javascript:;"></a>
+                    <p>2004-2015 © 穷游网™ qyer.com All rights reserved.
+                        <a href="javascript:;">京ICP备12003524号</a>
+                        京公网安备11010502023470
+                    </p>
+                    <p>
+                        <a href="javascript:;">穷游网
+                        </a>为<a href="javascript:;">旅行
+                        </a>者提供原创实用的<a href="javascript:;">出境游
+                        </a><a href="javascript:;">旅行指南
+                        </a>和<a href="javascript:;">旅游攻略
+                        </a>、<a href="javascript:;">旅行社区
+                        </a>和<a href="javascript:;">问答
+                        </a>交流平台，并提供 <a href="javascript:;">签证
+                        </a>、<a href="javascript:;">保险
+                        </a>、<a href="javascript:;">机票
+                        </a>、<a href="javascript:;">酒店预订
+                        </a>、<a href="javascript:;">租车</a>等服务。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    /*账号登录  短信快捷登录 切换*/
+    $(function(){
+        $("#userLogin").click(function(){
+            $("#userLogin").addClass("checkedItem");
+            $("#userRegister").removeClass("checkedItem");
+            $(".login-input").css("display","block");
+            $(".register-input").css("display","none");
+        });
+        $("#userRegister").click(function(){
+            $("#userRegister").addClass("checkedItem");
+            $("#userLogin").removeClass("checkedItem");
+            $(".register-input").css("display","block");
+            $(".login-input").css("display","none");
+        });
+
+        /*对用户名不存在进行验证*/
+        $("#account").blur(function () {
+            var $account = $(this).val();
+
+            /*以get提交数据*/
+            $.get("/users/judgeName",{"account":$account},function (result,status,xhr) {
+                if(result == "用户不存在"){
+                    $("#prompt_user").html("该用户不存在");
+                    $("#prompt_user").css("display","block");
+                    $("#account").focus();
+                }else{
+                    $("#prompt_user").html("");
+                    $("#prompt_user").css("display","none");
+                }
+            },"html");
+        });
+
+        /*通过Ajax get提交方式进行提交,并验证用户登录*/
+        $("form:eq(0)").submit(function(event){
+            /*去除表单的默认行为*/
+            event.preventDefault();
+            /*serialize()获取表单里的所有具有name属性的元素中的name和值(并以键值对的形式展示)*/
+            data = $(this).serialize();
+            /*提交路径,先去app.js里找/users对应的分配路由,再去/routes找/login*/
+            $.get("/users/login",data,function(result,status,xhr){
+                /*获取uers.js中返回的结果*/
+
+                if(result == "登录失败"){
+                    $("#judgePwd").html("密码或用户名不正确");
+                    $("#judgePwd").css("display","block");
+                    $("#pwd").focus();
+                }else if(result == "登录成功"){
+                    $("body").html("<div style='margin: 100px auto; font-size: 50px; text-align: center'>恭喜你，登录成功！</div>")
+                    /*$("#judgePwd").html("用户名密码正确");
+                    $("#judgePwd").css("display","block");*/
+                }
+            },"html");
+        });
+    });
+</script>
+</html>
